@@ -7,9 +7,11 @@
     <meta name="Description" content="Juega a las damas online. Reta al ordenador y consigue ganarle en el menor tiempo posible." />
     <link rel="stylesheet" type="text/css" href="MiniDamas/styles/styles.css">
     <link rel="stylesheet" type="text/css" href="MiniDamas/styles/boardStyles.css">
+	<link rel="stylesheet" type="text/css" href="MiniDamas/styles/formC.css">
     <script type="text/javascript" async src="MiniDamas/scripts/move.js"></script>
     <script type="text/javascript" async src="MiniDamas/scripts/boardCreation.js"></script>
     <script type="text/javascript" async src="MiniDamas/scripts/app.js"></script>
+    <script type="text/javascript" async src="MiniDamas/scripts/formC.js"></script>
 </head>
 
 <body>
@@ -60,18 +62,50 @@
                 a éste. El objetivo del juego es capturar las fichas del oponente o acorralarlas para que no
                 puedan realizar movimientos.
             </p>
-            <p>
-                Si no conoces las reglas, sigue leyendo cómo se juega en <a href="#">Reglas de las damas</a>.
-            </p>
+        <p>
+            Si no conoces las reglas, sigue leyendo cómo se juega en <a href="javascript:void(0);">Reglas de las
+                damas</a>.
+        </p>
+    </div>
+	
+    <div id="contactformC" class="formC">
+
+        <div class="formC-content">
+            <form id="form-formC">
+
+                <div class="formC-header">
+                    <span id="closeformC" class="close">&times;</span>
+                    <h3>Formulario de contacto</h3>
+                </div>
+
+                <div class="formC-body">
+
+                    <input type="text" placeholder="Nombre" class="nombre inputForm" size="5" id="nombre">
+                    <input type="text" placeholder="Apellido" class="apellido inputForm" id="apellido">
+                    <input type="email" placeholder="Email" class="email inputForm" id="email">
+
+                    <textarea placeholder="Comentarios... (máximo 250 palabras)" 
+                              maxlength="250" 
+                              name="comentarios"
+                              id="coments" 
+                              cols="30" 
+                              rows="10" 
+                              class="coment"></textarea>
+                </div>
+                
+                <div class="formC-footer">
+                    <input type="submit" id="sendButton" value="Enviar">
+                </div>
+            </form>
         </div>
     </div>
 
-    <footer class="footer">
+	<footer class="footer">
         <p>
-            <strong>minidamas.com 2021</strong> - Juega a las damas online - <a href="#">Contacto</a>
+            <strong>minidamas.com 2021</strong> - Juega a las damas online - <a id="contact"
+                href="javascript:void(0);">Contacto</a>
         </p>
     </footer>
-
+	
 </body>
-
 </html>
